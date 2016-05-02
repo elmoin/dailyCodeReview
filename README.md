@@ -9,3 +9,25 @@ Of course this could be done with every other language, but we might leverage El
 
 ## Considerations
 There are several ways to choose a person for a given day. The easiest might be taking the current time (in seconds since the epoch) and just modulo and map them to the weekdays. This is not too elegant and we get a problem if we have seven people. It would be your turn on the same day of the week every day and two persons would always get saturday and sunday. So maybe we can think of something nicer (database?).
+
+
+## HowTo
+
+1. Fork this repo (https://github.com/elmoin/dailyCodeReview.git)
+
+2. Clone
+
+  ```
+  git clone https://github.com/{username}/dailyCodeReview.git
+  ```
+
+3. Rudimentary frame can be found in daily.elm, play around with that
+
+4. Compile with
+  ```
+  elm make daily.elm --output=daily.js
+  ```
+
+5. Open a pull request to show your result
+
+6. Have fun :)
